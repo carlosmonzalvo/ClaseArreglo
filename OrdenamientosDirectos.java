@@ -2,8 +2,10 @@
 class OrdenamientosDirectos{
 
 	//ATRIBUTOS
-	int []vector;
-
+	int []a;
+	int []b; 
+	int []c;
+	int max;
 
 	//CONSTRUCTOR
 
@@ -12,17 +14,18 @@ class OrdenamientosDirectos{
 
 	public void GeneraNumeros(){
 		int i;
-		for(i= 0; i < vector.length; i++)
-			vector[i]= (int)(Math.random()*100);
+		for(i= 0; i < max; i++)
+			a[i]= b[i]= c[i]= (int)(Math.random()*100);
 	}
 	
 	public void Inicializar(){
-		int max;
+
 		max = Teclado.LeeEntero("Dame el tamaño del arreglo: ");
-		vector = new int [max];
+		a = b = c =  new int [max];
 	}
 	public void Imprimir(){
-		System.out.println(vector);
+		for (int i=0; i<max ; i++)
+		System.out.println(a);
 
 	}
 
