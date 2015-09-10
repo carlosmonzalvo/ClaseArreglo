@@ -12,11 +12,13 @@ class OrdenamientosDirectos{
 	
 	public static void main(String[] args) {
 		OrdenamientosDirectos ordena = new OrdenamientosDirectos();
+		Ordenamientos ordenar= new Ordenamientos();
 		
 
 		ordena.Inicializar();
 		ordena.GeneraNumeros();
-		ordena.Imprimir();
+		ordena.Imprimir(a);
+
 
 	}
 
