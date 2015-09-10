@@ -13,16 +13,16 @@ el programa puede saber a cual irse cuando le mande un parametro o cuando no le 
 
 class Arreglo{
 	//ATRUBUTOS
-	private int  []arreglo;
+	private int []arreglo;
 	private int indice;
 	private int dato;
-	Ordenamientos arr;
+	Ordenamientos arr = new Ordenamientos();
 
 	//CONTRUCTOR
 	public Arreglo(int max){
 		arreglo = new int [max];
 		indice = -1;
-		arr = new Ordenamientos();
+		
 	}
 	//METODOS
 	public boolean ValidarEspacio(){
