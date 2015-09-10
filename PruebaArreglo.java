@@ -14,7 +14,7 @@ class PruebaArreglo {
 	public static void main(String[] args) {
 		//variables locales
 		int dato, pos, max, opcion;
-		Arreglo miarreglo; // Aqui se crea el objeto de tipo arreglo
+		Arreglo miarreglo; // Aqui se declara el objeto de tipo arreglo
 
 		max = Teclado.LeeEntero("Dame el tamaño del Arreglo: ");
 		miarreglo = new Arreglo(max); //aqui se crea el objeto arreglo

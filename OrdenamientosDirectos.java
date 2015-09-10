@@ -8,10 +8,6 @@ class OrdenamientosDirectos{
 	//CONSTRUCTOR
 
 
-
-
-
-
 	//METODOS
 
 	public void GeneraNumeros(){
@@ -20,7 +16,10 @@ class OrdenamientosDirectos{
 			vector[i]= (int)(Math.random()*100);
 	}
 	
-	public void Inicializar(int max){
+	public void Inicializar(){
+		int max;
+
+		Teclado.LeeEntero("Dame el tamaño del arreglo: ")
 		vector = new int [max];
 	}
 	public void Imprimir(int []arr){
