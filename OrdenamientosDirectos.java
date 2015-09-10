@@ -8,6 +8,17 @@ class OrdenamientosDirectos{
 	int max;
 
 	//CONSTRUCTOR
+	//SE UTILIZARA EL CONSTRUCTOR PADRE
+	
+	public static void main(String[] args) {
+		OrdenamientosDirectos ordena = new OrdenamientosDirectos();
+		
+
+		ordena.Inicializar();
+		ordena.GeneraNumeros();
+		ordena.Imprimir();
+
+	}
 
 
 	//METODOS
@@ -23,9 +34,9 @@ class OrdenamientosDirectos{
 		max = Teclado.LeeEntero("Dame el tamaño del arreglo: ");
 		a = b = c =  new int [max];
 	}
-	public void Imprimir(){
+	public void Imprimir(int []arr){
 		for (int i=0; i<max ; i++)
-		System.out.println(a);
+		System.out.println(arr);
 
 	}
 
