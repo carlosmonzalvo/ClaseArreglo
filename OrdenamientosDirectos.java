@@ -2,7 +2,7 @@
 class OrdenamientosDirectos{
 
 	//ATRIBUTOS
-	int []vector = new int[100];
+	int []vector;
 
 
 	//CONSTRUCTOR
@@ -20,9 +20,11 @@ class OrdenamientosDirectos{
 			vector[i]= (int)(Math.random()*100);
 	}
 	
-	public void Inicializar(){
+	public void Inicializar(int max){
+		vector = new int [max];
 	}
-	public void Imprimir(){
+	public void Imprimir(int []arr){
+		System.out.println(arr);
 
 	}
 
