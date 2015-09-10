@@ -18,12 +18,11 @@ class OrdenamientosDirectos{
 	
 	public void Inicializar(){
 		int max;
-
-		Teclado.LeeEntero("Dame el tamaño del arreglo: ")
+		max = Teclado.LeeEntero("Dame el tamaño del arreglo: ");
 		vector = new int [max];
 	}
-	public void Imprimir(int []arr){
-		System.out.println(arr);
+	public void Imprimir(){
+		System.out.println(vector);
 
 	}
 
