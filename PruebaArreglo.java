@@ -46,9 +46,10 @@ class PruebaArreglo {
 					break;
 				case 5: dato = Teclado.LeeEntero("Dame el dato para borrar: ");
 				 	pos = miarreglo.Buscar(dato);
-					if(pos != -1)
+					if(pos != -1){
 						dato = miarreglo.Borrar(pos);
-					System.out.println("El dato eliminado es: " + dato);
+						System.out.println("El dato eliminado es: " + dato);
+						}
 					break;
 				case 6: miarreglo.Ordenar();
 					break;

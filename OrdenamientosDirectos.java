@@ -2,48 +2,48 @@
 class OrdenamientosDirectos{
 
 	//ATRIBUTOS
-	int []a;
-	int []b; 
-	int []c;
-	int max;
+	static int []a;
+	static int []b; 
+	static int []c;
+	static int max;
 
 	//CONSTRUCTOR
 	//SE UTILIZARA EL CONSTRUCTOR PADRE
 	
 	public static void main(String[] args) {
-		OrdenamientosDirectos ordena = new OrdenamientosDirectos();
-		Ordenamientos ordenar= new Ordenamientos();
+
+		Ordenamientos ordena = new Ordenamientos();
+		
+		Inicializar();
+		GeneraNumeros();
+		Imprimir(a);
+		ordena.sortIntercambio(a, a.length-1);
+		Imprimir(a);
+		ordena.sortSeleccion(b, b.length-1);
+		Imprimir(b);
+		ordena.sortInsercion(c, c.length-1);
+		Imprimir(c);
 		
 
-		ordena.Inicializar();
-		ordena.GeneraNumeros();
-		ordena.Imprimir(a);
-
-
 	}
-
-
 	//METODOS
 
-	public void GeneraNumeros(){
+	public static void GeneraNumeros(){
 		int i;
 		for(i= 0; i < max; i++)
 			a[i]= b[i]= c[i]= (int)(Math.random()*100);
 	}
 	
-	public void Inicializar(){
+	public static void Inicializar(){
 
 		max = Teclado.LeeEntero("Dame el tamaño del arreglo: ");
 		a = b = c =  new int [max];
 	}
-	public void Imprimir(int []arr){
+	public static void Imprimir(int []arr){
 		for (int i=0; i<max ; i++)
 		System.out.println(arr);
 
 	}
-
-
-
 
 
 }

@@ -43,6 +43,7 @@ class Arreglo{
 		for(int i = 0; i <= indice; i++){
 			System.out.println(arreglo[i]);
 		}
+		System.out.println("\n");
 	}
 	public int Buscar(int dato){
 		for(int i = 0; i<= indice; i++){
@@ -65,6 +66,6 @@ class Arreglo{
 		System.out.println(arreglo[pos]);
 	}
 	public void Ordenar(){
-		arr.SortIntercambio(arreglo, indice);
+		arr.sortIntercambio(arreglo, indice);
 	}
 }
