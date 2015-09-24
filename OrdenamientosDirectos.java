@@ -11,17 +11,30 @@ class OrdenamientosDirectos{
 	//SE UTILIZARA EL CONSTRUCTOR PADRE
 	
 	public static void main(String[] args) {
+		long tInicio, tFin, tiempo;
 
 		Ordenamientos ordena = new Ordenamientos();
 		
 		Inicializar();
 		GeneraNumeros();
 		Imprimir(a);
+
+		tInicio = System.currentTimeMillis();
 		ordena.sortIntercambio(a, a.length-1);
+		tFin = System.currentTimeMillis();
+		System.out.println("El tiempo que se tardo en la ejecucion fue de: "+ tFin - tInicio);
 		Imprimir(a);
+
+		tInicio = System.currentTimeMillis();
 		ordena.sortSeleccion(b, b.length-1);
+		tFin = System.currentTimeMillis();
+		System.out.println("El tiempo que se tardo en la ejecucion fue de: "+ tFin - tInicio);
 		Imprimir(b);
+
+		tInicio = System.currentTimeMillis();
 		ordena.sortInsercion(c, c.length-1);
+		tFin = System.currentTimeMillis();
+		System.out.println("El tiempo que se tardo en la ejecucion fue de: "+ tFin - tInicio);
 		Imprimir(c);
 		
 
